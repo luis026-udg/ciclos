@@ -1,14 +1,20 @@
 
 function entregarValores()
 {
-  var total = 0;
+  resultado2.innerHTML = ("La serie es <br>");
   var n = 1;
-  var numeroCiclos = 0;
-  while (total <=100)
+  numeroCiclos = 0;
+  for (var total = 0; total <= 100; total + n)
   {
-
     total = total + n;
-    texto = texto + " + " + n;
+    if (numeroCiclos == 0)
+    {
+      texto = texto + n;
+    }
+    else
+    {
+      texto = texto + " + " + n;
+    }
     resultado2.insertAdjacentHTML("beforeend",texto + " = "+ total+"<br>" );
     numeroCiclos ++;
     n++;
