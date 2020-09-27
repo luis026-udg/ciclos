@@ -4,6 +4,7 @@ function entregarValores()
   resultado2.innerHTML = ("La serie es <br>");
   var n = 1;
   numeroCiclos = 0;
+  var texto = "La suma de: ";
   for (var total = 0; total <= 100; total + n)
   {
     total = total + n;
@@ -20,8 +21,6 @@ function entregarValores()
     n++;
   }
 }
-var texto = "La suma de: ";
-var numeros = [];
 var resultado2 = document.getElementById("resultado");
 var b = document.getElementById("play");
 b.addEventListener("click", entregarValores);
